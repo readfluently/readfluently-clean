@@ -1,1 +1,22 @@
-
+{
+  "books": [
+    {
+      "id": "brain-learning",
+      "title": "Reading Comprehension from a Neuroplasticity Perspective",
+      "chapters": [
+        {
+          "id": "ch1",
+          "title": "Chapter 1: Welcome to Your Reading Journey",
+          "audioUrl": "",
+          "text": "Welcome to your reading journey.\n\nIn this chapter, you will learn how reading comprehension helps you become a confident learner.\n\nTry this: read one paragraph aloud, then record yourself and listen back."
+        },
+        {
+          "id": "ch2",
+          "title": "Chapter 2: Be an Active Learner",
+          "audioUrl": "",
+          "text": "Being an active learner means you don’t just read — you think, question, and connect ideas.\n\nAsk yourself:\n- What is the main idea?\n- What is the author trying to teach me?\n\nRecord yourself reading this section clearly and confidently."
+        }
+      ]
+    }
+  ]
+}
