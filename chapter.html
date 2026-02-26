@@ -1,1 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapter • Read Fluently</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="ghost" href="./index.html">← Back</a>
+    <div class="crumb" id="crumb">Loading…</div>
+    <div class="spacer"></div>
+    <button id="btnComplete" class="primary">Mark Complete</button>
+  </header>
 
+  <main class="container grid">
+    <section class="card">
+      <h2 id="chapterTitle">Chapter</h2>
+      <div class="progressRow">
+        <div class="pill" id="pillStatus">Not complete</div>
+      </div>
+
+      <div class="block">
+        <h3>Listen</h3>
+        <p class="hint">If you add an audio URL in data.json, it will appear here.</p>
+        <audio id="audio" controls class="player" hidden></audio>
+      </div>
+
+      <div class="block">
+        <h3>Read</h3>
+        <div id="chapterText" class="richtext"></div>
+      </div>
+
+      <div id="chapterError" class="status" style="display:none;"></div>
+    </section>
+
+    <section class="card">
+      <h2>Practice: Record Yourself</h2>
+      <p class="hint">Tap Record, read aloud, then Stop and Play.</p>
+
+      <div class="row">
+        <button id="btnRecord">🎙️ Record</button>
+        <button id="btnStop" disabled>⏹️ Stop</button>
+        <button id="btnPlay" disabled>▶️ Play</button>
+        <button id="btnClear" disabled>🧹 Clear</button>
+        <button id="btnDownload" disabled>⬇️ Download</button>
+      </div>
+
+      <div class="status" id="status">Status: idle</div>
+      <audio id="player" controls class="player" hidden></audio>
+
+      <div class="divider"></div>
+
+      <h2>Vocabulary Helper</h2>
+      <p class="hint">Type a word. The app searches the offline mini dictionary.</p>
+
+      <div class="row">
+        <input id="wordInput" class="input" placeholder="Type a word… (e.g., neuroplasticity)" />
+        <button id="btnDefine">Define</button>
+        <button id="btnSpeak" disabled>🔊 Speak</button>
+      </div>
+
+      <div class="block">
+        <div class="label">Definition</div>
+        <div id="definition" class="definition">—</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="chapter.js" defer></script>
+</body>
+</html>
