@@ -1,1 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Read Fluently • Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">RF</div>
+      <div>
+        <div class="title">Read Fluently</div>
+        <div class="subtitle">Web Prototype</div>
+      </div>
+    </div>
+    <button id="btnReset" class="ghost">Reset Progress</button>
+  </header>
 
+  <main class="container">
+    <section class="card">
+      <h1>Books</h1>
+      <p class="hint">Choose a chapter. Progress saves on this device.</p>
+      <div id="books"></div>
+      <div id="homeStatus" class="status" style="display:none;"></div>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
